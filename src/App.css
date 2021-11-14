@@ -1,38 +1,145 @@
-.App {
+
+body{
+  margin:0;
+ padding:0;
+ background-color: rgb(9, 9, 83);
+ color:rgb(235, 203, 203);
+ font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.container{
+  margin-top: 2rem;
+}
+h2{
   text-align: center;
+  font-weight: 500;
+}
+.form-banner{
+  margin-top: 1.8rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.input-form{
+  width: 37rem;
+  height: 2.5rem;
+  border:2px rgb(24, 24, 99) solid ;
+  border-radius: 6px;
+  color: rgb(58, 55, 55);
+  background-color: rgb(240, 234, 234);
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+input  {
+  padding-left: 1rem;
+}
+.input-form::placeholder{
+   opacity: 0.7;
+   color: rgb(146, 145, 145);
+}
+i.fa {
+  color: rgb(179, 162, 162);
+}
+i.fa:hover {
+  color: rgb(66, 57, 57);;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.submit-button{
+   border-radius: 7px;
+   border: none;
+   padding:0.5rem 0.5rem 0.5rem 0.5rem ;
+   height: 2.45rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.weather-list {
+  position: relative;
+  margin-top: 2.8rem;
+   background-color: rgb(240, 234, 234);
+   border-radius: 7px;
+   display: flex;
+   flex-direction: row;
+   gap: 5rem;
+   justify-content: center;
+   height: 20rem;
+   transition: 2s ease-in-out;
+   animation: wrpu 600ms;
+}
+
+.wl-1, .wl-2, .wl-3 {
+  margin-top: 3rem;
+  width: 13rem;
+  height: 13rem;
+  border:2px solid rgb(202, 200, 200);
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  gap:1rem;
+  border-radius: 7px;
+}
+.wl-1 img, .wl-2 img, .wl-3 img{
+  margin: 3px 0 0 0;
+  width: 90px;
+  height: 90px;
+}
+.wl-1 p, .wl-2 p, .wl-3 p{
+  color: rgb(58, 55, 55);
 }
 
-.App-link {
-  color: #61dafb;
+.more-section {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.more-section p img {
+  width: 40px;
+  height: 40px;
+}
+
+.modal {
+  color: rgb(58, 55, 55);
+}
+
+.modal-content {
+  background-color: rgb(240, 234, 234);
+}
+.btn-more {
+  width: 5rem;
+  border:none;
+  background-color: rgb(240, 234, 234);
+  border-radius: 2px;
+  color: rgb(58, 55, 55);
+}
+
+.btn-more:hover {
+  background-color: rgb(197, 183, 183);
+}
+
+.not-found{
+  margin-top: 2.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.not-found img {
+  width: 200px;
+  height: 200px;
+}
+
+.loader {
+  margin-top: 3.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader img {
+  width: 200px;
+  height: 200px;
 }
